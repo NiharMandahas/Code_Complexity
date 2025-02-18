@@ -1,0 +1,241 @@
+.main-frame {
+    display:flex;
+    width: 176vh;
+    margin-top: 5px; /* Removes any potential margins */
+    padding: 0;
+    background-color: #000;
+}
+
+.sidebar{
+    text-align: center;
+    width: 200px;
+    background: #262626;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    margin-left: 10px;
+}
+
+.sidebar.collapsed{
+    width: 60px;
+    border-radius: 5px;
+}
+
+
+.click-here{
+    width: 200px;
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+
+.click-here:hover{
+    background-color: aliceblue;
+    color: #000;
+}
+.click-here.collapsed{
+    width:60px;
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+
+.click-here.collapsed:hover{
+    background-color: aliceblue;
+    color:#000
+}
+
+
+.content {
+    background-color: rgb(0, 0, 0); /* Red background */
+    color:rgb(7, 7, 7);
+    display: flex; /* Ensures the content aligns properly if needed */
+    margin-left: 10px; 
+    width:920px;
+    margin-right: 10px;
+    flex-direction: column;
+    border-radius: 5px; /* Prevents any additional width/height from margins/padding */
+}
+
+
+.time-area{
+    color:#ffffff;
+    width: 60vh;
+    border-radius: 5px;
+    background-color: #000000;
+    border: 1px solid transparent;
+    margin-right: 5px;
+}
+
+.time-header{
+    height:35px;
+    align-self: top;
+    background-color: #333333;
+    color:#ffffff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 900;
+}
+
+.time-content{
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 380px;
+    margin-top: 1px;
+    background-color: #262626;
+    color: #ffffff;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.time-exp{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: 5px;
+    height: 410px;
+    margin-top: 1px;
+    background-color: #262626;
+    color: #ffffff;
+    padding-top: 10px;
+    overflow-y: auto; /* Adds scrollbar if content exceeds max height */
+    word-wrap: break-word; /* Breaks long words to prevent overflow */
+    white-space: pre-wrap;
+    text-align:center;
+    font-size: medium;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.graph-header{
+    text-align: center;
+    font-size: large;
+}
+
+.graph-imahe{
+   padding-right: 10px;
+}
+.reason-header{
+    text-align: center;
+    font-size: large;
+}
+
+.elements {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Optional: Removes padding around the list */
+}
+.code{
+    height:600px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    cursor: ns-resize;
+}
+
+.terminal{
+    height:250px;
+    cursor: ns-resize;
+    background-color: #262626;
+    color: aliceblue;
+}
+
+.terminal-title{
+    height:40px;
+    background-color: #434343;
+    color: #ffffff;
+    padding-left:5px ;
+    font-size: medium;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 900;
+}
+
+
+
+.termi-logo{
+    height:30px;
+    width:120px;
+}
+
+
+
+.write-here{
+    background-color: #262626;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    font-size: large;
+    font-style: 'Helvetica';
+    height: 710px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-color:#262626 ;
+}
+
+.code-header{
+    background-color:#333333 ;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color:#ffffff;
+    font-weight: 900;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: top;
+    height: 40px;
+    /* position: fixed; */
+}
+
+
+.run-logo{
+    height:30px;
+}
+
+.code-logo{
+    height:30px;
+    width: 80px;
+}
+
+
+.click-run{
+    align-self: center;
+    align-items: center;
+    width:100px;
+    height: 40px;
+    background-color: #222222;
+    color: #02b128;
+    font-weight: 900;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.click-run:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.routes{
+    border-radius: 5px;
+    background-color: #333333;
+    width:197px;
+}
+
+.routes:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.execute{
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    height:50px;
+}
+
+
+.output{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 5px;
+}
